@@ -1,0 +1,107 @@
+programa
+{
+	inclua biblioteca Texto -->t
+	inclua biblioteca Util --> u
+	
+	funcao inicio()
+	{
+		sala2()
+	}
+	funcao sala2(){
+		inteiro opcoes = 0
+		inteiro opcao2 = 0
+		inteiro janela = 0
+		inteiro estatuas = 0
+		inteiro estatuas2 = 0
+		inteiro estatuas3 = 0
+		escrever("Voce adentra a uma sala bem espaçosa,voce vê algo parecido com estatuas na direita ao lado de uma porta\n") escrever("Mas nenhum sinal do cachorro, voce percebe uma janela,por algum motivo tudo lá fora aparenta estar escuro??")u.aguarde(3000)
+		enquanto(opcoes == 0){
+			limpa()
+		escrever("\n1- Olhar a janela\n2- Verificar as estatuas \n3- Ir até a porta\n")	
+		leia(opcao2)
+			se(opcao2 == 1){
+			limpa()
+				se(janela == 1){
+				escreva("Apenas vazio...\n")u.aguarde(2000)
+				}
+				se(janela == 0){
+				escrever("Voce vai até a janela\n")u.aguarde(2000)
+				escrever("E vê uma visão que voce achou que nunca iria experenciar na vida\n")u.aguarde(2000)
+				escrever("Você nao tinha parado pra pensar, você foi abduzido por um Ovni\n")u.aguarde(2000)
+				escrever("E voce agora ta aderiva no espaço\n")u.aguarde(2000)
+				escrever("Sem mais ninguem\n")u.aguarde(2000)
+				escrever("Só você e o vazio imensurável do espaço...\n")u.aguarde(2000)
+				escrever("Derrepente...\n")u.aguarde(2000)
+				escrever("Um som familiar, mas meio abafado pelas paredes\n")u.aguarde(2000)
+				escrever("WOOF\n")u.aguarde(2000)
+				escrever("E voce se lembra do seu objetivo\n")u.aguarde(2000)
+				escrever("O cachorro\n")u.aguarde(2000)
+				escrever("Neste momento\n")u.aguarde(2000)
+				escrever("é sua unica motivaçao pra continuar\n")u.aguarde(2000)
+				janela = janela +1
+				}
+				
+			}//fim opcao1
+			
+			se(opcao2 == 2){
+				estatuas2 = 0
+				limpa()
+				se(estatuas == 0){
+				escrever("Voce vai até as estatuás\n")u.aguarde(2000)
+				escrever("E ve estes seres estranhos\n")u.aguarde(2000)
+				escrever("Eles te lembram muito humanos\n")u.aguarde(2000)
+				escrever("Mas ao mesmo tempo não é humano\n")u.aguarde(2000)
+				escrever("E oque \"ideal\" significa??\n")u.aguarde(2000)
+				estatuas = 1
+				escrever("Ao lado voce vê uma placa\n")u.aguarde(2000)
+				escrever("Que parece ter instruçoes\n")u.aguarde(2000)
+				}
+				limpa()
+					se(estatuas3 == 0){
+					escrever("Analise as estátuas e diga qual é a IDEAL,\n para passar a próxima sala descubra O IDEAL HUMANOÍDE")u.aguarde(1000)
+					
+					enquanto(estatuas3 == 0){
+					escrever("\n1- homo sapien sapien \n2- homo neandertalis \n3- homo @$*@#\n")u.aguarde(2000)
+					leia(estatuas2)
+					
+					se(estatuas2 == 1){
+					escrever("A tela acima das estátuas escreve\n-Errado, esta versão já é ultrapassada o potencial humano nao pode ser alcançado com essa carcaça mediocre")	
+					}
+					se(estatuas2 == 2){
+					escrever("A tela acima das estátuas escreve\n-Uma versao ultrapassada até para os homo sapien sapien, um verdadeiro lixo")	
+					}
+					se(estatuas2 == 3){
+					escrever("A tela acima das estátuas escreve\n-Correto .A perfeição o apse humano, esta versão representa o humano em sua forma ideal,\nDeus errou em nossa criação e  se ele é nossa imagem e semelhança ")u.aguarde(2000)
+					escrever("\nele é falho")
+					escrever("\n -Que p0*ra é essa\n")u.aguarde(2000)
+					escrever("Ao responder 3 voce ouve um barulho alto de algo arrastando, e percebe q a porta abriu")u.aguarde(2000)
+					estatuas3 = 1
+						}
+						}	
+					}
+				}
+			se(opcao2 == 3){
+			
+			}
+		}
+	
+	}//fim opcao 2
+	funcao escrever(cadeia txt){
+		inteiro n_d_caract
+		caracter carac
+		n_d_caract = t.numero_caracteres(txt) -1
+		para(inteiro i = 0 ;i <=n_d_caract ;i++  ){
+		carac = t.obter_caracter(txt, i)
+		escreva(carac)u.aguarde(30)
+			
+		}
+		
+
+		
+	}
+
+
+
+	
+
+}
